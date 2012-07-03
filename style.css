@@ -1,0 +1,44 @@
+/**
+	@author end3r
+	// redesign or building from scratch really needed, this one looks like a total crap...
+**/
+
+* { margin: 0; padding: 0; }
+ul { list-style-type: none; }
+html { background: #EFEEEA url(img/bg.jpg) repeat; height: 100%; }
+body { background: #EFEEEA url(img/splash.jpg) center top no-repeat; width: 100%; height: 100%; font: normal 16px "Times New Roman"; }
+a { font-size: 16px; font-weight: bold; text-decoration: none; color: #2b8acb; }
+a:hover { text-decoration: none; border-bottom: 1px solid #4baaeb; }
+
+header { position: relative; width: 980px; margin: 0 auto; height: 180px; }
+header h1 { background: url(img/css4logo.png) 0 30px no-repeat; text-indent: -5000px; width: 100px; height: 156px; margin: 0 auto; }
+
+.social-pl { position: absolute; top: 15px; right: 0px; }
+.recommended-pl { position: absolute; top: 50px; right: 10px; }
+.contact-pl { position: absolute; top: 105px; right: 10px; text-align: right; }
+.contact-pl span#css { text-align: left; }
+
+.social-en { position: absolute; top: 15px; left: 0px; }
+.contact-en { position: absolute; top: 105px; left: 10px; }
+.github-en { position: absolute; top: 60px; left: 5px; }
+
+.content { width: 980px; margin: 0 auto; }
+.column-left { width: 488px; float: left; margin-right: 4px; }
+.column-right { width: 488px; float: left; }
+.content h2, .content ul li { opacity: 0.7; margin-bottom: 3px; padding: 4px 10px; }
+.content h2 { font-size: 20px; position: relative; background: #fff; border-radius: 4px; text-align: center; }
+.content h2 > iframe { position: absolute; top: 6px; right: 8px; }
+.content ul li { color: #333; font-size: 14px; width: 50%; float: left; padding: 0; }
+.content ul li p { margin: 0px 5px; padding: 4px 5px; background: #fff; border-radius: 3px; }
+
+span#css span { display: inline-block; text-indent: -5000px; width: 1px; }
+span#css:after { content: "info@" attr(id) "4." attr(lang); font-weight: bold; }
+
+.content ul li.en p {
+	background: #fff url(img/gb.png) 5px 10px no-repeat;
+	padding-left: 25px;
+}
+.content ul li.pl p {
+	background: #fff url(img/pl.png) 5px 10px no-repeat;
+	padding-left: 25px;
+}
